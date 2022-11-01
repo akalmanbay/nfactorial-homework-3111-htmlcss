@@ -1,0 +1,110 @@
+body {
+    margin:10px;
+    padding:10px;
+}
+
+div{
+    height:40px;
+}
+
+.item_blue{
+    background-color: blue;
+}
+
+.item_red {
+    background-color: red;
+}
+
+.item_green {
+    background-color: green;
+}
+
+.row1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 9fr 1fr;
+}
+
+.row3{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.row4{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 9fr 1fr;
+}
+
+.row5{
+    display: grid;
+    background-color: green;
+    width: 100%;
+}
+
+#row5_1{
+    width: 10px;
+    height: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.row6{
+    display: grid;
+    background-color: red;
+    width: 100%;
+}
+
+#row6_1{
+    width: 40px;
+    align-self: center;
+    justify-self: center;
+}
+
+.row7{
+    display: grid;
+    background-color: blue;
+    width: 100%;
+    grid-template-columns: 1fr 10fr;
+}
+
+#row7_2{
+    height: 10px;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.row8, .row9{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    background-color: orange;
+    justify-content: space-around;
+}
+
+.box {
+    height:40px;
+    width:20%;
+}
+
+.box2{
+    height:40px;
+    width:5%;
+}
+
+@media only screen and (max-width: 600px){
+    .box, .box2 {
+        height:30px;
+        width:5%;
+    }
+    div{
+        height: 30px;
+    }
